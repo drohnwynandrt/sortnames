@@ -9,18 +9,13 @@ function showArray(){
     document.getElementById("listnames").innerHTML=listNames+="</ul>";
 }
 
-function addName(){
-    var addingName = document.getElementById("inputName").value;
-    allNames.push(addingName);   
-    console.log(allNames) 
-}
-
 function sortNames(){
     document.getElementById("sortednames").innerHTML="";
+    sortedNames=allNames.sort();
 
     sortedList= "<ul>";
     for (i=0;i<allNames.length;i++){
-        sortedList+="<li>" + allNames[i] + "</li>";
+        sortedList+="<li>" + sortedNames[i] + "</li>";
     }
     document.getElementById("sortednames").innerHTML=sortedList+="</ul>";
 }
