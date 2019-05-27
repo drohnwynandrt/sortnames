@@ -1,4 +1,26 @@
+body{
+    background-color: beige;
+    margin: 10px;
+    padding: 10px;
+}
 #container{
+    text-align: center;
+}
+ul{
+list-style:none;
+}
+#sortBTN{
+    height: 20px;
+    vertical-align: center;
+}
+#header{
+    font-size: 40px;
+    background-color:whitesmoke;
+    border-radius:50%;
+}
+
+#nameContainer{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 5fr;
+    margin: 10px;
 }

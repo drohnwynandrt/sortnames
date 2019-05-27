@@ -10,9 +10,15 @@
 </head>
 <body>
     <div id="container">
-        <div id="listnames"></div>
-        <button id="sortBTN" onclick="sortNames()">Sort</button>
-        <div id="sortednames"></div>
+        <div id="header">List of Participants</div>
+
+        <div id="nameContainer">
+            <div id="listnames"></div>
+            <button id="sortBTN" onclick="sortNames()">Sort</button>
+            <div id="sortednames"></div>
+        </div>
+        <input id="inputName" type="text"></input>
+        <button onclick="addName()">Add name</button>
     </div>
     <script src='sortnames.js'></script>
 </body>
