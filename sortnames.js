@@ -1,13 +1,22 @@
-var listNames = ["Floris","Diem","Mike", "Drohn", "Evert", "Bashir", "Samir", "Oege", "Jacco"];
+var allNames = ["Floris","Diem","Mike", "Drohn", "Evert", "Bashir", "Samir", "Oege", "Jacco"];
 window.onload=showArray();
 
 function showArray(){
-    document.getElementById("listnames").innerHTML=listNames;
+     listNames= "<ul>";
+    for (i=0;i<allNames.length;i++){
+        listNames+="<li>" + allNames[i] + "</li>";
+    }
+    document.getElementById("listnames").innerHTML=listNames+="</ul>";
 }
 
 function sortNames(){
 
-    var sortedNames = listNames.sort();
-    document.getElementById("sortednames").innerHTML= sortedNames;
+    var sortedNames = allNames.sort();
+
+    sortedList= "<ul>";
+    for (i=0;i<allNames.length;i++){
+        sortedList+="<li>" + sortedNames[i] + "</li>";
     }
+    document.getElementById("sortednames").innerHTML=sortedList+="</ul>";
+}
 
